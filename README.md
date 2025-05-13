@@ -10,23 +10,32 @@ I used VirtualBox to create two machines:
 - **Server**: Windows Server 2022 as  
   - Domain Controller (AD – porto.lab)  
   - DNS  
-  - DHCP (172.16.0.100–200)/
+  - DHCP (172.16.0.100–200)
 
 - **Client**: Windows 10 joined to the domain
 
 ![Active Directory Home Lab - network diagram](https://github.com/user-attachments/assets/df941814-9ce2-4c39-b1c9-f81e1fa2530a)
 
-## What's in place
-- **AD Structure**  
-  - Users, organized by office (Environment & Safety, Administration, Concession Companies, Management, Customs, Port Operations, Human Resources, IT Systems, Technical Office, Security)
-  - PowerShell scripts to bulk-import users and set the office attribute
+## PowerShell script to create new users
+I setup a script that bulk-imports user names from a text file, and sets the office attribute for each one.
+
+## Department structure
+Each user is assigned to one of these offices: Environment & Safety, Administration, Concession Companies, Management, Customs, Port Operations, Human Resources, IT Systems, Technical Office, Security.
  
 ![immagine](https://github.com/user-attachments/assets/18f643a3-390d-497c-bcbd-312d13943e23)
 
 
-- **Network Services**  
-  - Internal DNS for porto.lab  
-  - DHCP scope and options  
+## DNS role
+Server is the primary DNS for the lab. All domain-joined clients query the internal DNS for resolution, if that doesn't succeed the query gets forwarded to the upstream public DNS.
+
+![immagine](https://github.com/user-attachments/assets/a944c92c-eebf-4f0e-b36c-b586f02fe687)
+
+## DHCP role
+Server issues IP addresses in the 172.16.0.100 – 172.16.0.200 range to all clients.
+
+![immagine](https://github.com/user-attachments/assets/4d8b8b83-f2a8-43a7-8544-14dd433ab6f3)
+
+
 
 ## Next steps
 
