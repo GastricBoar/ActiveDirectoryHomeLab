@@ -5,7 +5,7 @@ I ignore how a commercial port really operates, i just like ports.
 
 
 ## How this works
-I used VirtualBox to create two machines:
+I used VMware Workstation to create two machines:
 
 - **Server**: Windows Server 2022 as  
   - Domain Controller (AD – porto.lab)  
@@ -14,7 +14,8 @@ I used VirtualBox to create two machines:
 
 - **Client**: Windows 10 joined to the domain
 
-![Active Directory Home Lab - network diagram](https://github.com/user-attachments/assets/df941814-9ce2-4c39-b1c9-f81e1fa2530a)
+![Active Directory Home Lab(1)](https://github.com/user-attachments/assets/1f00efc1-0a42-4cb1-bda0-74ba8936004c)
+
 
 ## PowerShell script to create new users
 I setup a script that bulk-imports user names from a text file, and sets the office attribute for each one.
