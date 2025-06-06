@@ -3,6 +3,16 @@
 Active Directory lab simulating the IT backbone of a modern commercial port (inspired by port of Rotterdam) and a logistics center (in Utrecht).\
 I ignore how a commercial port really operates, i just like ports.
 
+## Summary
+- [How this works](#howthisworks)
+- [Powershell script to create new users](#powershellscripttocreatenewusers)
+- [Department structure](#departmentstructure)
+- [DNS role](#dnsrole)
+- [DHCP role](#dhcprole)
+- [GPOs](#gpos)
+- [File server](#fileserver)
+- [Next steps](#nextsteps)
+
 
 ## How this works
 I used VMware Workstation to create two machines:
@@ -40,9 +50,10 @@ Server issues IP addresses in the 172.16.0.100 – 172.16.0.200 range to all cli
 ![immagine](https://github.com/user-attachments/assets/4d8b8b83-f2a8-43a7-8544-14dd433ab6f3)
 
 ## GPOs
-I have a couple test GPOs up in place: drive maps, set wallpapers, restrict panel control access, block access to USB devices, a password and lockout policy.
+I have a couple test GPOs up in place: drive maps, set wallpapers, restrict panel control access, block access to USB devices, password and lockout policy, deny server log on to users, allow remote server access to admins.
 
-![immagine](https://github.com/user-attachments/assets/c3ad59be-c9bf-46dc-b7f7-20be17bfeccb)
+![immagine](https://github.com/user-attachments/assets/dda3f90f-2146-4f39-9790-9ac926309189)
+
 
 
 ## File server
