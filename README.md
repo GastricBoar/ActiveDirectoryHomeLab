@@ -45,8 +45,13 @@ I have a couple test GPOs up in place: drive maps, set wallpapers, restrict pane
 ![immagine](https://github.com/user-attachments/assets/c3ad59be-c9bf-46dc-b7f7-20be17bfeccb)
 
 
+## File server
+I setup a file server with shared folders for every department, everybody gets adequate NTFS permissions according to their role. There's quota management and file screening (blocking audio/video) to help tidy things up.
+
+![immagine](https://github.com/user-attachments/assets/fd752119-ac90-412c-8912-481ce41d3263)
+
+
 ## Next steps
-- **File server**: shared folders, NTFS permissions, quota management  
 - **Security & Automation**: audit policies, LAPS, PowerShell DSC/Ansible  
 - **Hybrid experiments**: Azure AD Connect, Terraform-driven IaC  
 
