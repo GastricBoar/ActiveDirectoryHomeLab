@@ -4,14 +4,14 @@ Active Directory lab simulating the IT backbone of a modern commercial port (ins
 I ignore how a commercial port really operates, i just like ports.
 
 ## Summary
-- [How this works](#howthisworks)
-- [Powershell script to create new users](#powershellscripttocreatenewusers)
-- [Department structure](#departmentstructure)
-- [DNS role](#dnsrole)
-- [DHCP role](#dhcprole)
+- [How this works](#how-this-works)
+- [Powershell script to create new users](#powershell-script-to-create-new-users)
+- [Department structure](#department-structure)
+- [DNS role](#dns-role)
+- [DHCP role](#dhcp-role)
 - [GPOs](#gpos)
-- [File server](#fileserver)
-- [Next steps](#nextsteps)
+- [File server](#file-server)
+- [Next steps](#next-steps)
 
 
 ## How this works
