@@ -63,7 +63,7 @@ I setup a file server with shared folders for every department, everybody gets a
 ## Service accounts
 I use a service account for a kiosk screen right at the entrance of my port. I configured it to autologin, automatically start a browser on a specific web page in fullscreen mode. Non-admin users cannot access service accounts, this is enforced through GPO.
 
-<img src="https://github.com/user-attachments/assets/07239b12-edda-428c-8b6e-97edfb7ab654" alt="Kiosk for my port" width="800">
+<img src="https://github.com/user-attachments/assets/07239b12-edda-428c-8b6e-97edfb7ab654" alt="Kiosk for my port" width="700">
 
 
 ## Next steps
