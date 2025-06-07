@@ -11,6 +11,7 @@ I ignore how a commercial port really operates, i just like ports.
 - [DHCP role](#dhcp-role)
 - [GPOs](#gpos)
 - [File server](#file-server)
+- [Service accounts](#service-accounts)
 - [Next steps](#next-steps)
 
 
@@ -50,16 +51,19 @@ Server issues IP addresses in the 172.16.0.100 – 172.16.0.200 range to all cli
 ![immagine](https://github.com/user-attachments/assets/4d8b8b83-f2a8-43a7-8544-14dd433ab6f3)
 
 ## GPOs
-I have a couple test GPOs up in place: drive maps, set wallpapers, restrict panel control access, block access to USB devices, password and lockout policy, deny server log on to users, allow remote server access to admins.
+I have a couple test GPOs up in place: drive maps, set wallpapers, restrict panel control access, block access to USB devices, password and lockout policy, deny server log on to non-admin users, allow remote server access to admins, deny non-admin users access to service accounts.
 
-![immagine](https://github.com/user-attachments/assets/dda3f90f-2146-4f39-9790-9ac926309189)
-
-
+![immagine](https://github.com/user-attachments/assets/af87a6c8-9232-4a62-96bf-16441ae61efb)
 
 ## File server
 I setup a file server with shared folders for every department, everybody gets adequate NTFS permissions according to their role. There's quota management and file screening (blocking audio/video) to help tidy things up.
 
 ![immagine](https://github.com/user-attachments/assets/fd752119-ac90-412c-8912-481ce41d3263)
+
+## Service accounts
+I use a service account for a kiosk screen right at the entrance of my port. I configured it to autologin, automatically start a browser on a specific web page in fullscreen mode. Non-admin users cannot access service accounts, this is enforced through GPO.
+
+<img src="https://github.com/user-attachments/assets/07239b12-edda-428c-8b6e-97edfb7ab654" alt="Kiosk for my port" width="800">
 
 
 ## Next steps
