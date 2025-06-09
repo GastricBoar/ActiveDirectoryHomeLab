@@ -34,6 +34,8 @@ I created a text file, each line includes a name, a office location and a depart
 ## Department structure
 Each user is assigned to one of these offices: Environment & Safety, Administration, Concession Companies, Management, Customs, Port Operations, Human Resources, IT Systems, Technical Office, Security.
 
+My organizational units reflect administrative task needs, they are not necessarily a 1:1 copy of my organization chart.
+
 There's a couple security groups, and distribution lists that manage internal communications.
  
 ![immagine](https://github.com/user-attachments/assets/12f1cd99-5fd0-4729-8a5d-9eaa5bc0c869)
@@ -56,7 +58,9 @@ I have a couple test GPOs up in place: drive maps, set wallpapers, restrict pane
 ![immagine](https://github.com/user-attachments/assets/af87a6c8-9232-4a62-96bf-16441ae61efb)
 
 ## File server
-I setup a file server with shared folders for every department, everybody gets adequate NTFS permissions according to their role. There's quota management and file screening (blocking audio/video) to help tidy things up.
+I setup a file server with shared folders for every department, used NTFS permissions and Access Based Enumeration to make sure everybody sees only what they need to see according to their role.
+
+There's quota management and file screening (blocking audio/video) to help tidy things up.
 
 ![immagine](https://github.com/user-attachments/assets/fd752119-ac90-412c-8912-481ce41d3263)
 
