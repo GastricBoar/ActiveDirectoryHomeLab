@@ -10,7 +10,7 @@ I ignore how a commercial port really operates, i just like ports.
 - [DNS role](#dns-role)
 - [DHCP role](#dhcp-role)
 - [GPOs](#gpos)
-- [File server](#file-server)
+- [File server](#file-server-access-based-enumeration-quota-management-file-screening)
 - [Service accounts](#service-accounts)
 - [Next steps](#next-steps)
 
@@ -57,7 +57,7 @@ I have a couple test GPOs up in place: drive maps, set wallpapers, restrict pane
 
 ![immagine](https://github.com/user-attachments/assets/af87a6c8-9232-4a62-96bf-16441ae61efb)
 
-## File server
+## File server (access based enumeration, quota management, file screening)
 I setup a file server with shared folders for every department, used NTFS permissions and Access Based Enumeration to make sure everybody sees only what they need to see according to their role.
 
 There's quota management and file screening (blocking audio/video) to help tidy things up.
