@@ -10,8 +10,9 @@ I ignore how a commercial port really operates, i just like ports.
 - [DNS role](#dns-role)
 - [DHCP role](#dhcp-role)
 - [GPOs](#gpos)
-- [File server](#file-server-access-based-enumeration-quota-management-file-screening)
+- [File server (access based enumeration, quota management, file screening)](#file-server-access-based-enumeration-quota-management-file-screening)
 - [Service accounts](#service-accounts)
+- [Active Directory control delegations](#active-directory-control-delegations)
 - [Next steps](#next-steps)
 
 
@@ -69,9 +70,13 @@ I use a service account for a kiosk screen right at the entrance of my port. I c
 
 <img src="https://github.com/user-attachments/assets/07239b12-edda-428c-8b6e-97edfb7ab654" alt="Kiosk for my port" width="700">
 
+## Active Directory control delegations
+Imagined scenario is "helpdesk operators can access the domain controller server, they can read AD but are only allowed to reset user passwords". I delegated AD control to achieve this, making sure they could only act on a specific set of users.
+
+![immagine](https://github.com/user-attachments/assets/9b74027d-5c94-4da4-b8e5-aa4150b61c05)
+
 
 ## Next steps
-- **Security & Automation**: audit policies, LAPS, PowerShell DSC/Ansible  
-- **Hybrid experiments**: Azure AD Connect, Terraform-driven IaC  
+Linux server domain join, wiki software, LLM-based chatbot for knowledge, network devices simulation using Docker MacVLAN, powershell script repository for common AD tasks, Veeam backups, monitoring software.
 
 
