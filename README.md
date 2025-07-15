@@ -26,7 +26,10 @@ I used VMware Workstation to create two machines:
 
 - **Client**: Windows 10 joined to the domain
 
-![Active Directory Home Lab(1)](https://github.com/user-attachments/assets/1f00efc1-0a42-4cb1-bda0-74ba8936004c)
+- **Application server**: Ubuntu Server hosting containers and services
+
+<img width="821" height="521" alt="Active Directory Home Lab Diagram" src="https://github.com/user-attachments/assets/c9d209f5-4f08-4806-91ce-f92f2ce78f0a" />
+
 
 
 ## PowerShell script to create new users
@@ -75,8 +78,13 @@ Imagined scenario is "helpdesk operators can access the domain controller server
 
 ![immagine](https://github.com/user-attachments/assets/9b74027d-5c94-4da4-b8e5-aa4150b61c05)
 
+## Bookstack wiki (with LDAP authentication and a DNS entry)
+I setup a Bookstack installation on my Ubuntu server. Users access it through the "wiki.lab" domain name, and they authenticate through LDAP. Only users in the "Bookstack users" AD group can access the wiki.
+
+<img width="1849" height="493" alt="immagine" src="https://github.com/user-attachments/assets/58ffc5ae-0278-4804-8b01-ed79531be835" />
+
 
 ## Next steps
-Linux server domain join, wiki software, LLM-based chatbot for knowledge, network devices simulation using Docker MacVLAN, powershell script repository for common AD tasks, Veeam backups, monitoring software.
+Linux server domain join, LLM-based chatbot for knowledge, network devices simulation using Docker MacVLAN, powershell script repository for common AD tasks, Veeam backups, monitoring software.
 
 
