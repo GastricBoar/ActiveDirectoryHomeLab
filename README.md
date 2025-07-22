@@ -8,7 +8,8 @@ I ignore how a commercial port really operates, i just like ports.
 - [Powershell script to create new users](#powershell-script-to-create-new-users)
 - [Department structure](#department-structure)
 - [DNS role](#dns-role)
-- [DHCP role](#dhcp-role)
+- [DHCP role](#dhcp-role-dynamic-allocations)
+- [Using Docker and MacVLAN driver to fake network devices](#using-docker-and-macvlan-driver-to-fake-network-devices)
 - [GPOs](#gpos)
 - [File server (access based enumeration, quota management, file screening)](#file-server-access-based-enumeration-quota-management-file-screening)
 - [Service accounts](#service-accounts)
@@ -51,10 +52,20 @@ Server is the primary DNS for the lab. All domain-joined clients query the inter
 
 ![immagine](https://github.com/user-attachments/assets/a944c92c-eebf-4f0e-b36c-b586f02fe687)
 
-## DHCP role
-Server issues IP addresses in the 172.16.0.100 – 172.16.0.200 range to all clients.
+## DHCP role (dynamic allocations)
+Server issues dynamic IP addresses in the 172.16.0.100 – 172.16.0.200 range to all clients.
 
 ![immagine](https://github.com/user-attachments/assets/4d8b8b83-f2a8-43a7-8544-14dd433ab6f3)
+
+## Using Docker and MacVLAN driver to fake network devices
+I wanted to validate DHCP reservations and simulate realistic network interactions, but it's not like i have printers or IP phones at home. Instead, i deployed Docker containers using MacVLAN network driver. This allows containers to appear on the LAN with their own MAC and IP addresses. Containers are based on small Ubuntu images that i customized to include a DHCP client and network tools.
+
+<img width="1139" height="144" alt="immagine" src="https://github.com/user-attachments/assets/fa2e5456-267e-4cab-85d2-cea91021f191" /><br>
+
+This worked out well in the end! IP addresses in the 172.16.0.02 – 172.16.0.99 range will be used for reservations.<br>
+
+<img width="239" height="133" alt="immagine" src="https://github.com/user-attachments/assets/0a5fdbb2-b392-42e6-8d57-5918af0cc541" />
+
 
 ## GPOs
 I have a couple test GPOs up in place: drive maps, set wallpapers, restrict panel control access, block access to USB devices, password and lockout policy, deny server log on to non-admin users, allow remote server access to admins, deny non-admin users access to service accounts.
