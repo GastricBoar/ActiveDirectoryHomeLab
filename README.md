@@ -14,6 +14,7 @@ I ignore how a commercial port really operates, i just like ports.
 - [File server (access based enumeration, quota management, file screening)](#file-server-access-based-enumeration-quota-management-file-screening)
 - [Service accounts](#service-accounts)
 - [Active Directory control delegations](#active-directory-control-delegations)
+- [Bookstack wiki (with LDAP authentication)](#bookstack-wiki-with-ldap-authentication)
 - [Next steps](#next-steps)
 
 
@@ -89,7 +90,7 @@ Imagined scenario is "helpdesk operators can access the domain controller server
 
 ![immagine](https://github.com/user-attachments/assets/9b74027d-5c94-4da4-b8e5-aa4150b61c05)
 
-## Bookstack wiki (with LDAP authentication and a DNS entry)
+## Bookstack wiki (with LDAP authentication)
 I setup a Bookstack installation on my Ubuntu server. Users access it through the "wiki.lab" domain name, and they authenticate through LDAP. Only users in the "Bookstack users" AD group can access the wiki.
 
 <img width="1849" height="493" alt="immagine" src="https://github.com/user-attachments/assets/58ffc5ae-0278-4804-8b01-ed79531be835" />
